@@ -48,9 +48,19 @@ nav {
   color: var(--very-light-pink);
 }
 
-.navbar-category:hover {
+.navbar-category:hover{
   color: var(--hospital-green);
   border: 1px solid var(--hospital-green);
+}
+
+.navbar-category--selected{
+  background-color: var(--hospital-green);
+  color: var(--white);
+  border: 1px solid var(--hospital-green);
+}
+.navbar-category--selected:hover{
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .navbar-email {

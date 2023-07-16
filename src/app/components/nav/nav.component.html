@@ -6,7 +6,7 @@
     </a>
     <ul>
       <li *ngFor="let category of categories">
-        <a class="navbar-category" [routerLink]="[category.path]">
+        <a [class.navbar-category--selected]="selectedRoute==category.path" class="navbar-category" [routerLink]="[category.path]">
           {{ category.label }}
         </a>
       </li>
