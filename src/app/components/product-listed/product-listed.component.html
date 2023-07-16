@@ -1,0 +1,20 @@
+<div class="order-item">
+  <!-- <figure> -->
+    <img class="order-item-img" [src]="orderproduct.product.images[0]" alt="" />
+  <!-- </figure> -->
+  <div class="order-item-info">
+    <p class="order-item-info-title">{{ orderproduct.product.title }}</p>
+    <p class="order-item-info-price">${{ orderproduct.product.price }}</p>
+  </div>
+  <div class="order-item-count">
+    <button (click)="addOneProduct()" class="order-item-counter plus">+</button>
+    <p class="order-item-counter-quantity">{{ orderproduct.quantity }}</p>
+    <button (click)="removeOneProduct()" class="order-item-counter minus">-</button>
+  </div>
+  <img
+    (click)="orderService.removeProduct(OrderIndex)"
+    class="order-item-close"
+    src="../../../assets/icons/icon_close.png"
+    alt=""
+  />
+</div>

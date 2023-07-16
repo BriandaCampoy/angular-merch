@@ -1,0 +1,18 @@
+.order{
+  position:absolute;
+  background-color: var(--white);
+  top: 0;
+  right:0;
+  width: 99%;
+  max-width: 400px;
+  padding:10px;
+  box-shadow: -4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  z-index: 2;
+  transform: translateX(100%); /* Inicialmente, el menú estará fuera de la pantalla */
+  transition: transform 300ms ease-out;
+}
+.order.open{
+  transform: translateX(0);
+}
+

@@ -1,0 +1,7 @@
+<div class="home">
+  <app-order-products-list *ngIf="orderService.getOrderModal()"></app-order-products-list>
+  <div class="productList">
+    <app-product-card *ngFor="let product of productsList" [product]="product">
+    </app-product-card>
+  </div>
+</div>

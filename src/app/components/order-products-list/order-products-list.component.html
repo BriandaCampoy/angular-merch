@@ -1,0 +1,4 @@
+<div class="order" [class.open]="isOpen">
+  <h3>My order</h3>
+  <app-product-listed *ngFor="let prd of orderProducts; index as i" [orderproduct]="prd" [OrderIndex]="i"></app-product-listed>
+</div>

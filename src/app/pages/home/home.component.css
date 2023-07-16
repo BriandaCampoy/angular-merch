@@ -1,0 +1,12 @@
+.home {
+  position: relative;
+}
+.productList{
+  padding-top: 2rem;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 200px);
+  width: 100%
+}
+

@@ -1,0 +1,19 @@
+<div class="product">
+  <img [src]="product.images[0]" alt="">
+  <div class="product-info">
+    <div>
+      <p>${{product.price}}</p>
+      <p>{{product.title}}</p>
+    </div>
+    <!-- <figure> -->
+      <img
+        [ngClass]="{
+          add_button_disabled:orderService.isAdded(this.product)
+        }"
+        (click)="addProduct()"
+        src="../../../assets/icons/bt_add_to_cart.svg"
+        alt=""
+      >
+    <!-- </figure> -->
+  </div>
+</div>
